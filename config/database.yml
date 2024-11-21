@@ -1,14 +1,14 @@
 development: &development
   adapter: mysql2
-  database: <%= ENV['DB_DATABASE'] || 'db' %>
+  database: <%= ENV['DB_DATABASE']%>
   encoding: utf8mb4
-  username: <%= ENV['DB_USERNAME'] || 'root' %>
-  password: <%= ENV['DB_PASSWORD'] || 'root' %>
-  host: <%= ENV['DB_HOST'] || 'localhost' %>
-  port: <%= ENV['DB_PORT'] || '3306' %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] %>
+  port: <%= ENV['DB_PORT'] %>
 test:
   <<: *development
-  database: ods_test
+  database: good_night_app_test
 
 staging: &staging
   <<: *development
