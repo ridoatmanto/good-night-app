@@ -1,4 +1,4 @@
-class UserClocksController < ApplicationController
+class SleepingTimesController < ApplicationController
   def index
     render json: SleepingTime.all
   end
