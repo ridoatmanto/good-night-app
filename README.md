@@ -195,3 +195,67 @@ Request JSON Body
     }
 }
 ```
+***
+
+### Followed User Sleep Duration
+_Return all followed user sleep duration._\
+**GET** `http://localhost:3000/followed-user-sleep-duration/1`
+
+Rensponse Sample
+```
+[
+    {
+        "id": 4,
+        "user_id": 2,
+        "clock_in": "2024-11-20T16:29:04.000Z",
+        "clock_out": "2024-11-21T00:49:04.000Z",
+        "duration_in_minutes": 500,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Joaquin"
+        }
+    },
+    {
+        "id": 3,
+        "user_id": 2,
+        "clock_in": "2024-11-21T16:34:04.000Z",
+        "clock_out": "2024-11-22T00:49:04.000Z",
+        "duration_in_minutes": 495,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Joaquin"
+        }
+    },
+    {
+        "id": 6,
+        "user_id": 3,
+        "clock_in": "2024-11-20T16:19:04.000Z",
+        "clock_out": "2024-11-21T00:09:04.000Z",
+        "duration_in_minutes": 470,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Angel"
+        }
+    },
+    .
+    .
+    .
+    {
+        "id": 7,
+        "user_id": 4,
+        "clock_in": "2024-11-21T16:41:04.000Z",
+        "clock_out": "2024-11-21T23:39:04.000Z",
+        "duration_in_minutes": 418,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Juliana"
+        }
+    }
+]
+```
+
+_Created at November 22th 2024 by Rido Atmanto._
