@@ -17,6 +17,11 @@ Track your sleeping time into goodness. Good Sleeping quality, increase our life
 - Access from your favourite browser/Postman into url `http://localhost:3000`.
 
 ## Features
+
+### _Important Note:_
+_Every ID value in third segment means current `user_id` chosen. In simple term,_
+>"We use `user_id=1` for each request below".
+
 ### List Users
 **GET** `http://localhost:3000/users`\
 Rensponse Sample
