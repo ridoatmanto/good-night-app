@@ -54,7 +54,7 @@ Rensponse Sample
 ### Clock In
 _Return all clock in times, ordered by created times._\
 **POST** `http://localhost:3000/clock-in`\
-Request Body
+Request JSON Body
 ```
 {
     "user": {
@@ -75,7 +75,7 @@ Rensponse Sample
 ### Clock Out
 _Return clock in & clock out duration, ordered by duration times in minutes._\
 **POST** `http://localhost:3000/clock-out`\
-Request Body
+Request JSON Body
 ```
 {
     "user": {
@@ -109,4 +109,89 @@ Rensponse Sample
         "created_at": "2024-11-21T15:58:41.000Z"
     }
 ]
+```
+
+### Followed List
+_Return all followed user._\
+**GET** `http://localhost:3000/followships/1`
+
+Rensponse Sample
+```
+[
+    {
+        "id": 181,
+        "follower_id": 1,
+        "followee_id": 2,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Joaquin"
+        }
+    },
+    {
+        "id": 182,
+        "follower_id": 1,
+        "followee_id": 3,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Angel"
+        }
+    },
+    {
+        "id": 183,
+        "follower_id": 1,
+        "followee_id": 4,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Juliana"
+        }
+    },
+    .
+    .
+    .
+    {
+        "id": 189,
+        "follower_id": 1,
+        "followee_id": 10,
+        "created_at": "2024-11-21T16:49:04.000Z",
+        "updated_at": "2024-11-21T16:49:04.000Z",
+        "user": {
+            "name": "Kristopher"
+        }
+    }
+]
+```
+
+### Follow other user
+_Return saved followee_id(user_id)._\
+**POST** `http://localhost:3000/followships`\
+Request JSON Body
+```
+{
+    "user": {
+        "followee_id": "3",
+        "follower_id": "1"
+    }
+}
+```
+
+Rensponse Sample
+```
+{
+    "message": "Already followed!"
+}
+```
+
+### Unfollow other user
+_Remoced followee_id(user_id) from following list._\
+**DELETE** `http://localhost:3000/followships`\
+Request JSON Body
+```
+{
+    "user": {
+        "followee_id": 2
+    }
+}
 ```
