@@ -1,4 +1,6 @@
 class Followship < ApplicationRecord
+	belongs_to :user, foreign_key: :followee_id
+
 	def self.followed(user_id)
 		self.where(follower_id: user_id)
 			.order(created_at: :desc)
