@@ -10,7 +10,6 @@ Track your sleeping time into goodness. Good Sleeping quality, increase our life
 ## Installation
 - Rename file `.env.sample` as `.env`.
 - Set up `.env` value with your own database, username, and password.
-- Generate rails first database setting with running command `rails db:create`.
 - Run `rails db:migrate` to applying database migration.
 - Run `rails db:seed` to generate sample data. So, endpoint result will not be so empty.
 - Make your backend running, excute command `rails s` to start the server.
