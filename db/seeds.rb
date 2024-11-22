@@ -7,18 +7,18 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Seed User
-# User.create([
-# 	{ id: 1, name: 'Valentino' },
-# 	{ id: 2, name: 'Joaquin' },
-# 	{ id: 3, name: 'Angel' },
-# 	{ id: 4, name: 'Juliana' },
-# 	{ id: 5, name: 'Dylan' },
-# 	{ id: 6, name: 'Allen' },
-# 	{ id: 7, name: 'Omari' },
-# 	{ id: 8, name: 'Octavia' },
-# 	{ id: 9, name: 'James' },
-# 	{ id: 10, name: 'Kristopher' }
-# ])
+User.create([
+	{ id: 1, name: 'Valentino' },
+	{ id: 2, name: 'Joaquin' },
+	{ id: 3, name: 'Angel' },
+	{ id: 4, name: 'Juliana' },
+	{ id: 5, name: 'Dylan' },
+	{ id: 6, name: 'Allen' },
+	{ id: 7, name: 'Omari' },
+	{ id: 8, name: 'Octavia' },
+	{ id: 9, name: 'James' },
+	{ id: 10, name: 'Kristopher' }
+])
 puts "-" * 34
 puts "           START SEEDING"
 puts "-" * 34
