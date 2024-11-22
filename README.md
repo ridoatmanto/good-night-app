@@ -11,10 +11,10 @@ Track your sleeping time into goodness. Good Sleeping quality, increase our life
 - Rename file `.env.sample` as `.env`.
 - Set up `.env` value with your own database, username, and password.
 - Generate rails first database setting with running command `rails db:create`.
-- Run `rails db:migrate` to appliying database migration.
+- Run `rails db:migrate` to applying database migration.
 - Run `rails db:seed` to generate sample data. So, endpoint result will not be so empty.
 - Make your backend running, excute command `rails s` to start the server.
-- Access from your favourite browser/Postman into url `http://localhost:3000`.
+- Access from your favourite Browser/Postman into url `http://localhost:3000`.
 
 ## Features
 
@@ -24,7 +24,7 @@ _Every ID value in third segment means current `user_id` chosen. In simple term,
 
 ### List Users
 **GET** `http://localhost:3000/users`\
-Rensponse Sample
+Response Sample
 ```[
     {
         "id": 1,
@@ -68,7 +68,7 @@ Request JSON Body
 }
 ```
 
-Rensponse Sample
+Response Sample
 ```
 [
     "2024-11-21T15:59:38.000Z",
@@ -89,7 +89,7 @@ Request JSON Body
 }
 ```
 
-Rensponse Sample
+Response Sample
 ```
 [
     {
@@ -120,7 +120,7 @@ Rensponse Sample
 _Return all followed user._\
 **GET** `http://localhost:3000/followships/1`
 
-Rensponse Sample
+Response Sample
 ```
 [
     {
@@ -182,7 +182,7 @@ Request JSON Body
 }
 ```
 
-Rensponse Sample
+Response Sample
 ```
 {
     "message": "Already followed!"
@@ -206,7 +206,7 @@ Request JSON Body
 _Return all followed user sleep duration._\
 **GET** `http://localhost:3000/followed-user-sleep-duration/1`
 
-Rensponse Sample
+Response Sample
 ```
 [
     {
